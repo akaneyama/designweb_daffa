@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 65px;
+}
+
+nav ul li a {
+    font-size: 21px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart form input {
+    width: 15vw;
+    padding: 5px;
+    margin-right: 10px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.search-cart .icons .icon {
+    margin: 0 17px;
+    cursor: pointer;
+}
+
+.banner {
+    background-image: url('../images/unicorn_gundam_1.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: left;
+    padding: 100px 20px;
+    height: 66vh;
+}
+
+.banner-content h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+    /*margin-bottom: 52vh;*/
+}
+
+.banner-content button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    background-color: #000000;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    gap: 15px;
+    
+}
+
+.grades, .new-arrivals, .pre-order, .resin-kit, .add-ons, .gallery, .get-to-know {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.grades h2, .new-arrivals h2, .pre-order h2, .resin-kit h2, .add-ons h2, .gallery h2, .get-to-know h2 {
+    margin-bottom: 40px;
+    color: #F21C4B;
+}
+
+.grades-container, .product-container, .resin-container, .add-ons-container, .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grade-item, .product-item, .add-on-item, .gallery-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.grade-item img, .product-item img, .add-on-item img, .gallery-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-item button, .resin-container button, .grades button, .gallery button, .get-to-know button {
+    padding: 10px 20px;
+    background-color: #067AE0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons .icon {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Styles for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-cart {
+        margin-top: 10px;
+    }
+
+    .banner-content h1 {
+        font-size: 24px;
+    }
+
+    .grades-container, .product-container, .resin-container, .add-ons-container, .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grade-item, .product-item, .add-on-item, .gallery-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        padding: 50px 20px;
+    }
+
+    .banner-content button, .product-item button, .resin-container button, .grades button, .gallery button, .get-to-know button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .get-to-know form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-to-know input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
